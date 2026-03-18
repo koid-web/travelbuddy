@@ -136,14 +136,29 @@ header {
     align-items: center;
 }
 
-.bodyimg, .filler_text {
+.bodytext p {
+    max-width: 500px;
+    margin: 10px auto;
     font-size: 1.2rem;
+}
+
+.bodyimg, .filler_text {
     flex: 1;
     padding: 20px;
     margin: 20px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bodyimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
 }
 
 .direction {
@@ -157,17 +172,9 @@ header {
     display: flex;
     background-color: #d7cecb;
     width: 100%;
-    padding: var(--pad);
-}
-
-.bodyimgfull img {
-    display: flex;
+    height: 500px;
     justify-content: center;
-    align-items: center;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: 100px;
+    padding: var(--pad);
 }
 
 .bodycatalog {
